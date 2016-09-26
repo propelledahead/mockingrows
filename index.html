@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Simple Bootstrap Mockup Tool">
+    <meta name="author" content="PropelledAhead.com">
+    <title>Mockery</title>
+    <link rel="stylesheet" href="js/api/jquery-ui/1.12.1/no-theme/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/api/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div id="page-container">
+    <div id="page-header"><div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<h1 style="font-family: Optima, Segoe, " Segoe UI ", Candara, Calibri, Arial, sans-serif;font-size:1.3em;">Mockery</h1>
+			</div>
+		</div>		
+	</div></div>
+	<div id="page-content" class-"fill-height"  style="background-color:#ddd;"><div  style="background-color:#ddd;">
+	<form class="form-horizontal fill-height" role="form"  style="background-color:#ddd;">
+        <fieldset class="fill-height"  style="background-color:#ddd;">
+            <div class="container-fluid fill-height"  style="background-color:#ddd;">
+                <div class="row-fluid fill-height"  style="background-color:#ddd;">
+                    <div class="row fill-height"  style="background-color:#ddd;">
+                        <div id="section-toolbar" class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 fill-height" style="border-right:.2em solid #aaa;">
+                            <div id="toolbar-tabs" style="background-color:#ddd;">
+                                <ul>
+                                    <li><a class="btn btn-primary btn-xs" href="#toolbar-tabs-1" style="font-size:.6em;font-weight:bold;">Layout</a>
+                                    </li>
+                                    <li><a class="btn btn-primary btn-xs" href="#toolbar-tabs-2" style="font-size:.6em;font-weight:bold;">Inputs</a>
+                                    </li>
+                                    <li><a class="btn btn-primary btn-xs" href="#toolbar-tabs-3" style="font-size:.6em;font-weight:bold;">Components</a>
+                                    </li>
+                                </ul>
+
+                                <div id="toolbar-tabs-1" class="fill-height" style="background-color:#ddd;">
+
+									
+									<div class="row" style="margin-top:1em;" >
+										<span class="glyphicon glyphicon-cog"></span> Preset Column Layouts
+									</div>
+									<div class="row">
+										<div style="padding:1em;">
+											<div class="btn btn-default btn-sm" style="margin-top:.5em;display:inline-block;"><b>2 Cols</b> (&#8531;, &#8532;)</div>
+											<div class="btn btn-default btn-sm" style="margin-top:.5em;display:inline-block;"><b>2 Cols</b> (&frac14;, &frac34;)</div>
+											<div class="btn btn-default btn-sm" style="margin-top:.5em;display:inline-block;"><b>2 Cols</b> (&#8532;, &#8531;)</div>
+											<div class="btn btn-default btn-sm" style="margin-top:.5em;display:inline-block;"><b>2 Cols</b> (&frac34;, &frac14;)</div>											
+										</div>
+									</div>									
+									
+									<div class="row" style="margin-top:1em;" >
+										<span class="glyphicon glyphicon-cog"></span> Column Layout
+									</div>
+									<div class="row">
+										<div class="form-group form-group-sm" >
+											<div  style="display:inline;">
+												<label class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 control-label text-right" 
+
+													   for="columns_count">Column Count</label>
+											</div>
+											<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 fill-height text-left">
+												<input type="text" 
+													   maxlength="2" 
+													   style="width:5em;font-weight:bold;" 
+													   class="form-control" 
+													   id="columns_count" 
+													   value="2"
+													   placeholder="12" 
+													   required="required">
+											</div>
+										</div>
+									</div>
+									<div  class="row" style="margin-top:1em;">
+										<div>
+											<span class="glyphicon glyphicon-cog"></span> Column Widths
+										</div>
+									</div>										
+									<div class="row text-left" style="font-size:.7em;padding:0;margin:0;">
+										<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-left" style="display:inline;">
+											<label class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+												<span class="glyphicon glyphicon-th"></span>
+											</label>
+										</div>
+										<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 c_columns_to_writeol-xl-2 text-left" style="display:inline;">
+											<label class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="text-align:left;" for="master_column_size_xs"> XS </label>
+										</div>
+										<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-left" style="display:inline;">	
+											<label class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" for="master_column_size_sm"> SM </label>
+										</div>
+										<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-left" style="display:inline;">	
+											<label class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" for="master_column_size_md"> MD </label>
+										</div>
+										<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-left" style="display:inline;">	
+											<label class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" for="master_column_size_lg"> LG </label>
+										</div>
+										<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-left" >	
+											<label class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" for="master_column_size_xl"> XL </label>
+										</div>
+									</div>
+									<div class="row " style="font-size:.7em;padding:0;margin:0;">
+										<div class="row" style="margin-top:.5em;">
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<div class="control-label"><div class="btn btn-default btn-xs" id="btn_master_column_reset" style="font-size:.9em;">Master</div></div>
+											</div>										
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="background-color:#99ccff;width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_xs" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">											
+												<input type="text" maxlength="2" style="background-color:#99ccff;width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_sm" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="background-color:#99ccff;width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_md" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="background-color:#99ccff;width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_lg" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="background-color:#99ccff;width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_xl" value="6" placeholder="12" required="required">
+											</div>	
+										</div>	
+									</div>	
+									<div id="rows_column_sizes" class="row " style="padding:0;margin:0;font-size:.7em;">
+										<div class="row" style="margin-top:.5em;">
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-right" style="display:inline;">
+												<div class="control-label"><div class="btn btn-default btn-xs" style="font-size:.9em;">Col 1&nbsp;&nbsp;</div></div>
+											</div>										
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_0_xs" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">											
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_0_sm" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_0_md" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_0_lg" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_0_xl" value="6" placeholder="12" required="required">
+											</div>
+										</div>
+										<div class="row" style="margin-top:.5em;">
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-right" style="display:inline;">
+												<div class="control-label"><div class="btn btn-default btn-xs" style="font-size:.9em;">Col 2&nbsp;&nbsp;</div></div>
+											</div>										
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_1_xs" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">											
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_1_sm" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_1_md" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_1_lg" value="6" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_1_xl" value="6" placeholder="12" required="required">
+											</div>
+										</div>										
+									</div>
+									<div class="row " style="font-size:.7em;padding:0;margin:0;">
+										<div class="row" style="margin-top:.5em;">
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-right control-label" style="display:inline;">
+												<div class="btn btn-default btn-xs" style="font-size:.9em;">Total</div>
+											</div>										
+											<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 control-label" style="display:inline;font-weight:bold;">
+												<div id="total_column_size_xs" class="btn btn-success btn-xs" style="font-size:.9em;">12</div>
+											</div>
+											<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 control-label" style="display:inline;font-weight:bold;">											
+												<div id="total_column_size_sm" class="btn btn-success btn-xs" style="font-size:.9em;">12</div>
+											</div>
+											<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 control-label" style="display:inline;font-weight:bold;">
+												<div id="total_column_size_md" class="btn btn-success btn-xs" style="font-size:.9em;">12</div>
+											</div>
+											<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 control-label" style="display:inline;font-weight:bold;">
+												<div id="total_column_size_lg" class="btn btn-success btn-xs" style="font-size:.9em;">12</div>
+											</div>
+											<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 control-label" style="display:inline;font-weight:bold;">
+												<div id="total_column_size_xl" class="btn btn-success btn-xs" style="font-size:.9em;">12</div>
+											</div>
+										</div>
+									</div>									
+									<div  class="row" style="margin-top:1em;">
+										<div>
+											<span class="glyphicon glyphicon-cog"></span> More
+										</div>
+									</div>	
+									<div  class="row" style="margin-top:1em;">
+										<div class="form-group form-group-sm" >
+											<div  style="display:inline;">
+												<label class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 control-label text-right" 
+
+													   for="columns_count">Class</label>
+											</div>
+											<div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-xl-8 fill-height text-left">
+												<input type="text" 
+													   maxlength="200" 
+													   style="font-weight:bold;" 
+													   class="form-control" 
+													   id="columns_class_name" 
+													   placeholder="My-Class-Name" 
+													   >
+											</div>
+										</div>
+										<div class="form-group form-group-sm" >
+											<div  style="display:inline;">
+												<label class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 control-label text-right" 
+
+													   for="columns_count">ID</label>
+											</div>
+											<div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-xl-8 fill-height text-left">
+												<input type="text" 
+													   maxlength="200" 
+													   style="font-weight:bold;" 
+													   class="form-control" 
+													   id="columns_class_id" 
+													   placeholder="My-Object-ID" 
+													   >
+											</div>
+										</div>
+										<div class="form-group form-group-sm" >
+											<div  style="display:inline;">
+												<label class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 control-label text-right" 
+
+													   for="columns_count">Name</label>
+											</div>
+											<div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-xl-8 fill-height text-left">
+												<input type="text" 
+													   maxlength="200" 
+													   style="font-weight:bold;" 
+													   class="form-control" 
+													   id="columns_class_name" 
+													   placeholder="My-Object-Name" 
+													   >
+											</div>
+										</div>
+									</div>
+									<div  class="row" style="margin-top:1em;">
+										<div>
+											<span class="glyphicon glyphicon-cog"></span> Add To Form
+										</div>
+									</div>										
+									<div class="row" >
+										<div style="padding-left:3em;">
+											<img id="layout-object" 
+												 src="/img/DragMeToForm.png" 
+												 alt="Drag Me To Form" 
+												 title="Drag to form when configured" />
+										</div>
+									</div>
+									
+                                </div>
+                                <div id="toolbar-tabs-2" class="fill-height" style="background-color:#ddd;">
+                                    <div>
+										WIP
+									</div>
+                                </div>
+                                <div id="toolbar-tabs-3" class="fill-height" style="background-color:#ddd;">
+                                    <div>
+										WIP
+									</div>									<div class="row " style="font-size:.7em;">
+										<div class="row" style="margin-top:.5em;">
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-right" style="display:inline;">
+												<div class="control-label"><div class="btn btn-default btn-xs" style="font-size:.9em;">Col 1&nbsp;&nbsp;</div></div>
+											</div>										
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_xs" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">											
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_sm" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_md" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_lg" placeholder="12" required="required">
+											</div>
+											<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">
+												<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="master_column_size_xl" placeholder="12" required="required">
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="section-main" class="col-xs-6 col-sm-8 col-md-9 col-lg-9 col-xl-10 fill-height" style="background-color:#ddd;">
+
+                            <div id="main-tabs" class="fill-height">
+                                <ul>
+                                    <li>
+										<a class="btn btn-primary btn-xs" href="#main-tabs-1" style="font-size:.6em;font-weight:bold;">Builder</a>
+                                    </li>
+                                    <li>
+										<a class="btn btn-primary btn-xs" href="#main-$('#columns_count')tabs-2" style="font-size:.6em;font-weight:bold;">Preview</a>
+                                    </li>
+                                    <li>
+										<a class="btn btn-primary btn-xs" href="#main-tabs-3" style="font-size:.6em;font-weight:bold;">Code</a>
+                                    </li>
+                                </ul>
+                                <div id="main-tabs-1" style="height:99%;min-height:99%;width:100%;">
+                                    <div style="background-color:white;height:99%;min-height:99%;width:99%;border:black dotted .2em;">										
+									</div>
+                                </div>
+                                <div id="main-tabs-2" >
+                                    <div>
+									
+									</div>
+                                </div>
+                                <div id="main-tabs-3" >
+                                    <div>
+                                        <textarea 
+												  id="generated-code" 
+												  class="form-control" 
+												  style="height:80%;min-height:80%;width:100%;"
+												  cols="20"
+												  rows="30"
+												  ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+		</div></div>
+		<div id="page-footer"><div>
+			Mockery &copy; 2016
+		</div></div>
+	</div>
+	<!-- <script src="js/api/console-shim/1.0.0/console-shim.js"></script> -->
+    <script src="js/api/jquery-ui/1.12.1/no-theme/jquery.min.js"></script>
+    <script src="js/api/jquery-ui/1.12.1/no-theme/jquery-ui.min.js"></script>
+    <script src="js/api/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        
+		// Global Variables
+		var global_columns_total = 2;
+		var global_columns_best_fit = 6;
+		var global_columns_xs = 0;
+		var global_columns_sm = 0;
+		var global_columns_md = 0;
+		var global_columns_lg = 0;
+		var global_columns_xl = 0;		
+		var global_columns_xs_last = 0;
+		var global_columns_sm_last = 0;
+		var global_columns_md_last = 0;
+		var global_columns_lg_last = 0;
+		var global_columns_xl_last = 0;		
+		
+		
+		$(window).load(function() {
+			/// Initial loading point for all events and ui
+			var _function='Window.Load()'; 					
+            try{
+				initialize();
+			} catch (e) { console.error(_function+': '+e); }
+		
+		});
+
+        function initialize() {
+			/// Flyweight to initialize scripts
+			var _function=(arguments.callee.toString().match(/function\s+([^\s\(]+)/)[1]); 			
+			try{
+				BuildUI();
+				EventHooks();
+			} catch (e) { console.error(_function+': '+e); }
+		}
+		
+		function BuildUI(){
+			/// Flyweight to create ui elements
+			var _function=(arguments.callee.toString().match(/function\s+([^\s\(]+)/)[1]); 			
+			try{
+                $('#toolbar-tabs').tabs();
+                $('#main-tabs').tabs();
+			} catch (e) { console.error(_function+': '+e); }
+		}
+		
+		function EventHooks(){
+			/// Flyweight to create event hooks
+			var _function=(arguments.callee.toString().match(/function\s+([^\s\(]+)/)[1]); 
+			try{
+				$('#columns_count').on('change',function(){
+					if(! column_value_is_valid( $('#columns_count').val()) ){				    	
+						$('#columns_count').val(2);
+					}
+					column_rows_write($('#columns_count').val());
+					column_rows_add_values();
+				});
+				
+				column_rows_events_bind();
+				
+				$('#btn_master_column_reset').on('click',function(event){
+					try{
+						$('#master_column_size_xs').val(global_columns_best_fit).trigger('change');
+						$('#master_column_size_sm').val(global_columns_best_fit).trigger('change');
+						$('#master_column_size_md').val(global_columns_best_fit).trigger('change');
+						$('#master_column_size_lg').val(global_columns_best_fit).trigger('change');
+						$('#master_column_size_xl').val(global_columns_best_fit).trigger('change');
+					} catch (e) {}
+				});
+				
+				$('#master_column_size_xs').on('change',function(event){
+					try{
+						if(!column_value_is_valid($('#master_column_size_xs').val()) ){
+							$('#master_column_size_xs').val(global_columns_best_fit);
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_xs').val($('#master_column_size_xs').val());
+							}
+						}else if( global_columns_best_fit != $('#master_column_size_xs').val() ){
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_xs').val($('#master_column_size_xs').val());
+							}
+						}else{
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_xs').val($('#master_column_size_xs').val());
+							}
+						}
+						column_rows_add_values();
+					} catch (e) {}
+				});
+				$('#master_column_size_sm').on('change',function(){
+					try{
+						if(!column_value_is_valid($('#master_column_size_sm').val()) ){
+							$('#master_column_size_sm').val(global_columns_best_fit);
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_sm').val($('#master_column_size_sm').val());
+							}
+						}else if( global_columns_best_fit != $('#master_column_size_sm').val() ){
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_sm').val($('#master_column_size_sm').val());
+							}
+						}else{
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_sm').val($('#master_column_size_sm').val());
+							}
+						}
+						column_rows_add_values();
+					} catch (e) {}
+				});
+				$('#master_column_size_md').on('change',function(){$('#master_column_size_sm').val(global_columns_best_fit);
+					try{
+						if(!column_value_is_valid($('#master_column_size_md').val()) ){
+							$('#master_column_size_md').val(global_columns_best_fit);
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_md').val($('#master_column_size_md').val());
+							}
+						}else if( global_columns_best_fit != $('#master_column_size_md').val() ){
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_md').val($('#master_column_size_md').val());
+							}
+						}else{
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_md').val($('#master_column_size_md').val());
+							}
+						}
+						column_rows_add_values();
+					} catch (e) {}					
+				});					
+				$('#master_column_size_lg').on('change',function(){
+					try{
+						if(!column_value_is_valid($('#master_column_size_lg').val()) ){
+							$('#master_column_size_lg').val(global_columns_best_fit);
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_lg').val($('#master_column_size_lg').val());
+							}
+						}else if( global_columns_best_fit != $('#master_column_size_lg').val() ){
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_lg').val($('#master_column_size_lg').val());
+							}
+						}else{
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_lg').val($('#master_column_size_lg').val());
+							}
+						}
+						column_rows_add_values();
+					} catch (e) {}
+				});
+				$('#master_column_size_xl').on('change',function(){
+					try{
+						if(!column_value_is_valid($('#master_column_size_xl').val()) ){
+							$('#master_column_size_xl').val(global_columns_best_fit);
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_xl').val($('#master_column_size_xl').val());
+							}
+						}else if( global_columns_best_fit != $('#master_column_size_xl').val() ){
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_xl').val($('#master_column_size_xl').val());
+							}
+						}else{
+							for(var a = 0; a < global_columns_total;a++){
+								$('#rows_column_size_'+a+'_xl').val($('#master_column_size_xl').val());
+							}
+						}
+						column_rows_add_values();
+					} catch (e) {}
+				});	
+			} catch (e) { console.error(_function+': '+e); }
+		}
+		function column_best_fit(current_column_value){
+			/// Find largest average size of 12 columns when based on columns count
+			var _function=(arguments.callee.toString().match(/function\s+([^\s\(]+)/)[1]); 
+			var _result = 1;
+			try{
+				var column_value = parseInt(current_column_value);
+				if(column_value == 1){
+					_result = 12;
+				}else if(column_value == 2){
+					_result = 6;
+				}else if(column_value == 3){
+					_result = 4;	
+				}else if(column_value == 4){
+					_result = 3;
+				}else if(column_value == 5 || column_value == 6){
+					_result = 2;					
+				}else{
+					_result = 1;
+				}
+			} catch (e) { console.error(_function+': '+e); }
+			return _result;
+		}
+		function column_value_is_valid(current_column_value){
+			/// Displays the UI for columns count field controls for sizing
+			var _function=(arguments.callee.toString().match(/function\s+([^\s\(]+)/)[1]); 
+			var _result = false;
+			try{
+				var column_value = parseInt(current_column_value);
+				if( 
+					   column_value == 1
+					|| column_value == 2
+					|| column_value == 3
+					|| column_value == 4
+					|| column_value == 5
+					|| column_value == 6
+					|| column_value == 7
+					|| column_value == 8
+					|| column_value == 9
+					|| column_value == 10
+					|| column_value == 11
+					|| column_value == 12
+				){
+					_result = true;
+				}
+			} catch (e) { console.error(_function+': '+e); }
+			return _result;
+		}
+		
+		function column_rows_write(columns_to_write){
+			/// writes the number of columns specified
+			var _function=(arguments.callee.toString().match(/function\s+([^\s\(]+)/)[1]); 
+			try{
+				var _columns_to_write = parseInt(columns_to_write);
+				if( column_value_is_valid(_columns_to_write) && global_columns_total !== _columns_to_write){
+					console.info(_function + ' Column Count Changed from '+global_columns_total+' to '+_columns_to_write);
+					// Lets build the interface
+					global_columns_total = _columns_to_write;
+					var _content = '';
+					var _pad = '';
+					
+					for(var a = 0; a <= (_columns_to_write - 1); a++){
+						
+						var _col_size = column_best_fit(_columns_to_write);
+						global_columns_best_fit = _col_size;
+						if(a < 9){
+							_pad='&nbsp;&nbsp;';
+						}else{
+							_pad = '';
+						}
+						console.log();
+						_content = _content 
+							            +'<div class="row" style="margin-top:.5em;">'
+										+'	<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-right" style="display:inline;">'
+										+'		<div class="control-label"><div class="btn btn-default btn-xs" style="font-size:.9em;">Col '+ (a + 1) +_pad+'</div></div>'
+										+'	</div>'
+										+'	<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">'
+										+'		<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_'+a+'_xs" value="'+_col_size+'" placeholder="12" required="required">'
+										+'	</div>'
+										+'	<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">'									
+										+'		<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_'+a+'_sm" value="'+_col_size+'" placeholder="12" required="required">'
+										+'	</div>'
+										+'	<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">'
+										+'		<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_'+a+'_md" value="'+_col_size+'" placeholder="12" required="required">'
+										+'	</div>'
+										+'	<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">'
+										+'		<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_'+a+'_lg" value="'+_col_size+'" placeholder="12" required="required">'
+										+'	</div>'
+										+'	<div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" style="display:inline;">'
+										+'		<input type="text" maxlength="2" style="width:3em;font-weight:bold;" class="form-control input-sm" id="rows_column_size_'+a+'_xl" value="'+_col_size+'" placeholder="12" required="required">'
+										+'	</div>'
+										+'</div>';
+					}
+					column_rows_events_unbind();
+					$('#rows_column_sizes').html( _content );
+					column_rows_events_bind(_columns_to_write);
+
+					$('#master_column_size_xs').val(_col_size);
+					$('#master_column_size_sm').val(_col_size);
+					$('#master_column_size_md').val(_col_size);
+					$('#master_column_size_lg').val(_col_size);
+					$('#master_column_size_xl').val(_col_size);
+					
+				}else{
+					console.info(_function + ' Column Count Unchanged from '+global_columns_total);
+				}
+			} catch (e) { console.error(_function+': '+e); }
+		}
+		function column_rows_events_unbind(){
+			/// Removes all events tied to columns to prevent memory leaks of event handlers
+			var _function=(arguments.callee.toString().match(/function\s+([^\s\(]+)/)[1]); 
+			try{
+				for(var a = 0; a < 12; a++){
+					$('#rows_column_size_'+a+'_xs').off();
+					$('#rows_column_size_'+a+'_sm').off();
+					$('#rows_column_size_'+a+'_md').off();
+					$('#rows_column_size_'+a+'_lg').off();
+					$('#rows_column_size_'+a+'_xl').off();
+				}
+			} catch (e) { console.error(_function+': '+e); }
+		}
+		function column_rows_events_bind(column_count){
+			/// Build Events for dynamic column adding
+			var _function=(arguments.callee.toString().match(/function\s+([^\s\(]+)/)[1]); 
+			try{
+				for(var a = 0; a < column_count; a++){
+					$('#rows_column_size_'+a+'_xs').on('change',function(){
+						column_rows_add_values();
+					});
+					$('#rows_column_size_'+a+'_sm').on('change',function(){
+						column_rows_add_values();
+					});
+					$('#rows_column_size_'+a+'_md').on('change',function(){
+						column_rows_add_values();
+					});
+					$('#rows_column_size_'+a+'_lg').on('change',function(){
+						column_rows_add_values();
+					});
+					$('#rows_column_size_'+a+'_xl').on('change',function(){
+						column_rows_add_values();
+					});
+				}
+			} catch (e) { console.error(_function+': '+e); }
+		}
+		function column_rows_add_values(){
+			/// Adds the column values of all the column rows
+			var _function=(arguments.callee.toString().match(/function\s+([^\s\(]+)/)[1]); 
+			try{
+				global_columns_xs = 0;
+				global_columns_sm = 0;
+				global_columns_md = 0;
+				global_columns_lg = 0;
+				global_columns_xl = 0;
+				
+				for(var a = 0; a < global_columns_total; a++){					
+					if( column_value_is_valid(parseInt($('#rows_column_size_'+a+'_xs').val())) ){
+						global_columns_xs += parseInt($('#rows_column_size_'+a+'_xs').val());
+					}
+					if( column_value_is_valid(parseInt($('#rows_column_size_'+a+'_sm').val())) ){
+						global_columns_sm += parseInt($('#rows_column_size_'+a+'_sm').val());
+					}
+					if( column_value_is_valid(parseInt($('#rows_column_size_'+a+'_md').val())) ){
+						global_columns_md += parseInt($('#rows_column_size_'+a+'_md').val());
+					}
+					if( column_value_is_valid(parseInt($('#rows_column_size_'+a+'_lg').val())) ){
+						global_columns_lg += parseInt($('#rows_column_size_'+a+'_lg').val());
+					}
+					if( column_value_is_valid(parseInt($('#rows_column_size_'+a+'_xl').val())) ){
+						global_columns_xl += parseInt($('#rows_column_size_'+a+'_xl').val());
+					}
+				}
+				
+				$('#total_column_size_xs').html(global_columns_xs);
+				$('#total_column_size_sm').html(global_columns_sm);
+				$('#total_column_size_md').html(global_columns_md);
+				$('#total_column_size_lg').html(global_columns_lg);
+				$('#total_column_size_xl').html(global_columns_xl);
+				
+				if( global_columns_xs == 12 ){
+					$('#total_column_size_xs').removeClass('btn-danger');
+					$('#total_column_size_xs').removeClass('btn-warning');
+					$('#total_column_size_xs').addClass('btn-success');					
+				} else if( global_columns_xs < 12 && global_columns_xs > 0  ){
+					$('#total_column_size_xs').removeClass('btn-danger');
+					$('#total_column_size_xs').removeClass('btn-success');
+					$('#total_column_size_xs').addClass('btn-warning');
+				} else{
+					$('#total_column_size_xs').removeClass('btn-warning');
+					$('#total_column_size_xs').removeClass('btn-success');
+					$('#total_column_size_xs').addClass('btn-danger');
+				}
+				
+				if( global_columns_sm == 12 ){
+					$('#total_column_size_sm').removeClass('btn-danger');
+					$('#total_column_size_sm').removeClass('btn-warning');
+					$('#total_column_size_sm').addClass('btn-success');					
+				} else if( global_columns_sm < 12 && global_columns_sm > 0  ){
+					$('#total_column_size_sm').removeClass('btn-danger');
+					$('#total_column_size_sm').removeClass('btn-success');
+					$('#total_column_size_sm').addClass('btn-warning');
+				} else{
+					$('#total_column_size_sm').removeClass('btn-warning');
+					$('#total_column_size_sm').removeClass('btn-success');
+					$('#total_column_size_sm').addClass('btn-danger');
+				}
+				
+				if( global_columns_md == 12 ){
+					$('#total_column_size_md').removeClass('btn-danger');
+					$('#total_column_size_md').removeClass('btn-warning');
+					$('#total_column_size_md').addClass('btn-success');					
+				} else if( global_columns_md < 12 && global_columns_md > 0  ){
+					$('#total_column_size_md').removeClass('btotal_column_size_mdtn-danger');
+					$('#total_column_size_md').removeClass('btn-success');
+					$('#total_column_size_md').addClass('btn-warning');
+				} else{
+					$('#total_column_size_md').removeClass('btn-warning');
+					$('#total_column_size_md').removeClass('btn-success');
+					$('#total_column_size_md').addClass('btn-danger');
+				}	
+				
+				if( global_columns_lg == 12 ){
+					$('#total_column_size_lg').removeClass('btn-danger');
+					$('#total_column_size_lg').removeClass('btn-warning');
+					$('#total_column_size_lg').addClass('btn-success');					
+				} else if( global_columns_lg < 12 && global_columns_lg > 0  ){
+					$('#total_column_size_lg').removeClass('btn-danger');
+					$('#total_column_size_lg').removeClass('btn-success');
+					$('#total_column_size_lg').addClass('btn-warning');
+				} else{
+					$('#total_column_size_lg').removeClass('btn-warning');
+					$('#total_column_size_lg').removeClass('btn-success');
+					$('#total_column_size_lg').addClass('btn-danger');
+				}	
+				
+				if( global_columns_xl == 12 ){
+					$('#total_column_size_xl').removeClass('btn-danger');
+					$('#total_column_size_xl').removeClass('btn-warning');
+					$('#total_column_size_xl').addClass('btn-success');					
+				} else if( global_columns_xl < 12 && global_columns_xl > 0  ){
+					$('#total_column_size_xl').removeClass('btn-danger');
+					$('#total_column_size_xl').removeClass('btn-success');
+					$('#total_column_size_xl').addClass('btn-warning');
+				} else{
+					$('#total_column_size_xl').removeClass('btn-warning');
+					$('#total_column_size_xl').removeClass('btn-success');
+					$('#total_column_size_xl').addClass('btn-danger');
+				}					
+			} catch (e) { console.error(_function+': '+e); }
+		}
+		
+    </script>
+</body>
+</html>
