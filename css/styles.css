@@ -37,3 +37,19 @@ body {
     height: 100%;
 	min-height:100%;
 }
+#formInputs > li,#formComponents > li{
+    list-style: none;  
+    padding:1em;
+    margin:0.25em;
+    width:100%;
+
+}
+#formCanvas > li{
+    list-style: none;  
+    padding:1em;
+    margin:0.25em;
+    margin-left:0em;
+}
+#formCanvas > li:hover{
+    background-color:#e0c4ff;
+}
